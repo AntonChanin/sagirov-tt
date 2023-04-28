@@ -14,7 +14,7 @@ const BackgroundLayer: FC<PropsWithChildren<Props>> = (props) => {
   return (
     <div
       data-name={name}
-      className={`bg-${BgSize[size]} to bg-no-repeat w-full ${className}`.trimEnd()}
+      className={`bg-${BgSize[size]} bg-no-repeat w-full ${className}`.trimEnd()}
       style={url ? {  backgroundImage: `url(${url})` } : {}}
     >
       {children}
