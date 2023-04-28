@@ -4,15 +4,16 @@ import { TitleSize } from '../types/common';
 
 type Props = {
     size?: keyof typeof TitleSize;
+    className?: string;
 };
 
 const Title: FC<PropsWithChildren<Props>> = (props) => {
-    const { size = 'REGULAR', children } = props;
+    const { size = 'REGULAR', className = '', children } = props;
     const fragment = useRef<HTMLDivElement>(null);
     const classList: Record<keyof typeof TitleSize, string> = {
-        MAX: 'font-semibold text-6xl tracking-wide',
+        MAX: 'font-semibold text-6xl tracking-wider',
         EXTRA: 'font-semibold text-5xl',
-        MEDIUM: 'font-medium text-lg',
+        MEDIUM: 'font-normal text-[1.7rem]',
         REGULAR: 'font-normal text-base',
         SMALL: 'font-light text-sm',
         MIN: 'font-light text-xs',
@@ -23,7 +24,7 @@ const Title: FC<PropsWithChildren<Props>> = (props) => {
     }, []);
     
     return (
-        <div className={`text-white ${classList[size]}`} ref={fragment}></div>
+        <div className={`${classList[size]} ${className}`.trimEnd()} ref={fragment}></div>
     );
 };
 

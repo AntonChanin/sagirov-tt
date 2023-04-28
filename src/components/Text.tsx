@@ -18,7 +18,7 @@ const Text: FC<PropsWithChildren<Props>> = (props) => {
   };
 
   return (
-    <span className={`text-white ${classList[size]}`}>{children}</span>
+    <span className={`${classList[size]}`}>{children}</span>
   );
 };
 
