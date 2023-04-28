@@ -3,7 +3,7 @@ import { FC, PropsWithChildren } from 'react';
 import { TitleSize } from '../types/common';
 
 type Props = {
-    size?: keyof typeof TitleSize;
+  size?: keyof typeof TitleSize;
 };
 
 const Text: FC<PropsWithChildren<Props>> = (props) => {

@@ -11,7 +11,7 @@ const Title: FC<PropsWithChildren<Props>> = (props) => {
     const fragment = useRef<HTMLDivElement>(null);
     const classList: Record<keyof typeof TitleSize, string> = {
         MAX: 'font-semibold text-6xl tracking-wide',
-        EXTRA: 'font-semibold text-2xl',
+        EXTRA: 'font-semibold text-5xl',
         MEDIUM: 'font-medium text-lg',
         REGULAR: 'font-normal text-base',
         SMALL: 'font-light text-sm',
