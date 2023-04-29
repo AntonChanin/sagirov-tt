@@ -1,4 +1,4 @@
-# The Ilarionova Zemlia test task for CMS
+# The Ilarionova Zemlia test task
 
 For the init dependency
 
@@ -7,6 +7,9 @@ For the init dependency
 For the run to dev mod
 
 ` yarn dev`
+
+deploy on:
+https://inspiring-rolypoly-46f1b1.netlify.app/
 
 ### The marginal notes
 
