@@ -9,7 +9,7 @@ function App() {
 
   return (
     <> 
-      <BackgroundLayer name="space" url="src/assets/space.png"   className="bg-black bg-top overflow-hidden h-full">
+      <BackgroundLayer name="space" url="../assets/space.png"   className="bg-black bg-top overflow-hidden h-full">
         <Navbar className="max-w-[1170px]" />
         <div className="max-w-[1170px] mobile:mt-[456px] lg:w-full md:w-full mobile:w-fit sm:w-fit m-auto md:mt-16 lg:mt-16 flex lg:flex-row md:flex-row mobile:flex-col sm:flex-col mobile:justify-normal sm:justify-normal md:justify-between  sm:h-full md:h-1/3">
           <div className="flex flex-col justify-between w-fit md:h-full sm:h-1/4">
@@ -55,7 +55,7 @@ function App() {
             <InfoCard className="text-[rgba(255,255,255,0.6)]" start="путешествие" main="597" end="дней" />
           </div>
         </div>
-        <BackgroundLayer name="mars" url="src/assets/redplanet.png" className="absolute top-0 left-0 h-full bg-top mars" />
+        <BackgroundLayer name="mars" url="../assets/redplanet.png" className="absolute top-0 left-0 h-full bg-top mars" />
       </BackgroundLayer>
     </>
   );

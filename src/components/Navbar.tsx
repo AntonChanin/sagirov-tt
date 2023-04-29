@@ -23,7 +23,7 @@ const Navbar: FC<Props> = (props) => {
     <nav className="flex justify-around w-full h-32 items-center bg-[rgba(0,0,0,0.3)]" >
       <div className={`flex justify-between w-full ${className}`.trimEnd()}>
         <Button className={`sm:w-1/2 md:w-1/4 flex`}>
-          <img alt="" src="src/assets/logo.png" className="m-auto px-4" />
+          <img alt="" src="../assets/logo.png" className="m-auto px-4" />
         </Button>
         <ul className={`${getShortButtonIsShow()} md:flex gap-8 w-auto m-auto`}>
           {navs.map((el) => (<NavItem>{el}</NavItem>))}
