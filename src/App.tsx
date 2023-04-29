@@ -9,10 +9,10 @@ function App() {
 
   return (
     <> 
-      <BackgroundLayer name="space" url="src/assets/space.png" className="bg-black bg-top overflow-hidden h-full">
+      <BackgroundLayer name="space" url="src/assets/space.png"   className="bg-black bg-top overflow-hidden h-full">
         <Navbar className="max-w-[1170px]" />
-        <div className="max-w-[1170px] h-1/3 lg:w-full md:w-full sm:w-fit sm:mt-[60%] m-auto md:mt-16 lg:mt-16 flex lg:flex-row md:flex-row sm:flex-col justify-between">
-          <div className="flex flex-col justify-between w-fit">
+        <div className="max-w-[1170px] mobile:mt-[456px] lg:w-full md:w-full mobile:w-fit sm:w-fit m-auto md:mt-16 lg:mt-16 flex lg:flex-row md:flex-row mobile:flex-col sm:flex-col mobile:justify-normal sm:justify-normal md:justify-between  sm:h-full md:h-1/3">
+          <div className="flex flex-col justify-between w-fit md:h-full sm:h-1/4">
             <div>
               <Title
                 size="MAX"
@@ -25,11 +25,11 @@ function App() {
                 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-800"
               >на красную планету</Title>
             </div>
-            <div className="md:mb-[25%] sm:mb-auto">
+            <div>
               <Button type="secondary">Начать путешествие</Button>
             </div>
           </div>
-          <div className="flex lg:flex-wrap md:flex-col md:h-full sm:h-fit justify-between content-evenly w-1/4 h-full gap-4 z-20">
+          <div className="flex lg:flex-wrap md:flex-col md:h-full sm:h-fit justify-between content-evenly w-1/4 mobile:h-fit gap-4 z-20">
             <InfoCard
               className="text-[rgba(255,255,255,0.8)]"
               start="мы"
@@ -56,7 +56,6 @@ function App() {
           </div>
         </div>
         <BackgroundLayer name="mars" url="src/assets/redplanet.png" className="absolute top-0 left-0 h-full bg-top mars" />
-        <div className="h-full"/>
       </BackgroundLayer>
     </>
   );

@@ -3,11 +3,12 @@ import { FC, PropsWithChildren } from 'react';
 import { TitleSize } from '../types/common';
 
 type Props = {
+  className?: string;
   size?: keyof typeof TitleSize;
 };
 
 const Text: FC<PropsWithChildren<Props>> = (props) => {
-  const { size = 'REGULAR', children } = props;
+  const { size = 'REGULAR', className = '', children } = props;
   const classList: Record<keyof typeof TitleSize, string> = {
     MAX: 'font-bold text-2xl',
     EXTRA: 'font-semibold text-xl',
@@ -18,7 +19,7 @@ const Text: FC<PropsWithChildren<Props>> = (props) => {
   };
 
   return (
-    <span className={`${classList[size]}`}>{children}</span>
+    <span className={`${classList[size]} ${className}`.trimEnd()}>{children}</span>
   );
 };
 
